@@ -1,25 +1,37 @@
 /* CSS stylesheet for modifying elements of the page */
 /* Set background for the site */
 html{
-    background-color: darkseagreen;
+    background: #f0eade;
     }
-/* Settings for the h1 tag throughout site */   
-h1
-    {
-    text-align: center;
-    font-size: 30px;
-    background: rgba(116, 114, 114, 0.493);
-    padding: 10px;
-    font-family:Arial, Helvetica, sans-serif
-    }
-/* Settings for the nav tag throughout site */ 
-nav
-    {
-    text-align: center;
-    font-size: 20px;
-    margin-bottom: 20px;
+/* Creates the header bar across the top of the page*/
+header {
+    display: block;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to right, #f0eade 0%,#eee8dc 4%,#f0eade 4%,#f0eade 10%,#eee8dc 12%,#f1ebdf 12%,#efe9dd 14%,#f2ece0 15%,#efe9dd 15%,#efe9dd 23%,#f1ebdf 24%,#efe9dd 24%,#efe9dd 33%,#f0eade 35%,#f2ece0 36%,#efe9dd 38%,#f0eade 44%,#eee8dc 45%,#f0eade 46%,#f0eade 52%,#eee8dc 53%,#f1ebdf 54%,#efe9dd 54%,#f1ebdf 57%,#efe9dd 59%,#f1ebdf 61%,#efe9dd 68%,#f2ece0 69%,#efe9dd 69%,#eee8dc 74%,#f0eade 75%,#eee8dc 77%,#f0eade 79%,#eee8dc 80%,#f1ebdf 81%,#eee8dc 81%,#efe9dd 83%,#f2ece0 84%,#efe9dd 84%,#f1ebdf 85%,#efe9dd 85%,#efe9dd 87%,#f1ebdf 88%,#efe9dd 90%,#f1ebdf 90%,#eee8dc 92%,#f0eade 93%,#efe9dd 96%,#f1ebdf 96%,#eee8dc 97%,#f1ebdf 98%,#efe9dd 99%,#f0eade 100%);
+    position: absolute;
+    padding-bottom: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+}  
+/* Adds links and styling to the header bar */
+header .main-nav li {
+    list-style: none;
+    height: 100px;
+    float: left;
+    margin: 30px 0px 0px 0px;
+    padding: 0px 15px;
+    line-height: 100px;
+    color: black;
+    text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
-    }
+    font-weight: 200;
+    font-size: 20px;
+    padding: 0px 0px;
+ }
+ header .logo {
+    float: left;
+ }
 /* sets the links in the <NAV> tag to colors dependant on if theyve been selected */ 
 :link
     {
@@ -31,23 +43,66 @@ nav
     {
     color:blueviolet;
     }
-/* Settings for the img tag throughout site */ 
-img
+/* Settings for the .main-image tag throughout site */ 
+body .main-img
     {
+    padding-top: 200px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: auto;
+    width: 100%;
     height: auto;
+    object-fit: cover;
     max-width: 600px;
     max-height: 600px;
-    height: min-content;
-    margin-bottom: 20px;
     }
 /* Settings for the p tag throughout site */
 p
     {
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    max-width: 800px;
+    }
+/* Settings for the h1 and h2 tags throughout site */
+h1
+    {
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    }   
+h2
+    {
+    text-align: center;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+/* Gallery settings for portfolio page */
+div.gallery {
+    border: 1px solid #ccc;
+    }
+div.gallery:hover {
+    border: 1px solid #777;
+    }   
+div.gallery img {
+    padding-top: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 600px;
+    max-height: 600px;
+    }
+div.desc {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 800px;
     }

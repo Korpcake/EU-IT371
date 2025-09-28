@@ -4,19 +4,46 @@
 <meta name="author" content="James Korp">
 <meta name="description" content="Fake photography portfolio site for IT371 course at Excelsior University.">
 <link rel="stylesheet" href="style.css">
-<head>
-    <h1>Portfolio</h1>
-</head>
+<header>
+<!--Added image for a logo -->
+    <a class="logo" href="/"><img src="Images/banner.jpg"</a>
+<!-- List for creation of the navigation bar with links -->
+<ul>
+    <ul class="main-nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="about.html">About</a></li>
+</ul>
+ </header>
 <body>
-<! -- Navigation links to other pages on the site-->
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="portfolio.html">Portfolio</a> |
-        <a href="contact.html">Contact</a> |
-        <a href="about.html">About</a> |
-    </nav>
-    <p>Take a look at some of my best work.</p>
-<!-- Image of a sample photograph -->
-    <img src="Images/portrait_LK.jpg" alt="Fryer Hill">
+<!-- addition of images for a gallery and ID of classes for CSS modificaion-->
+    <div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="Images/portrait_LK.jpg">
+            <img src="Images/portrait_LK.jpg" alt="Fryer Hill" width="600" height="400">
+        </a>
+        <div class="desc">Portrait of a child</div>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="Images/indy_LK.jpg">
+            <img src="Images/indy_LK.jpg" alt="LK in Indy" width="600" height="400">
+        </a>
+        <div class="desc">LK in Indianapolis</div>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="Images/hh_LK.jpg">
+            <img src="Images/hh_LK.jpg" alt="LK at HH" width="600" height="400">
+        </a>
+        <div class="desc">LK at Hocking Hills</div>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="Images/HH.jpg">
+            <img src="Images/HH.jpg" alt="Hocking Hills" width="600" height="400">
+        </a>
+        <div class="desc">Hocking Hills</div>
+    </div>
+</div>
 </body>
 </html>
