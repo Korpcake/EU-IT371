@@ -11,8 +11,6 @@ header {
     background: linear-gradient(to right, #f0eade 0%,#eee8dc 4%,#f0eade 4%,#f0eade 10%,#eee8dc 12%,#f1ebdf 12%,#efe9dd 14%,#f2ece0 15%,#efe9dd 15%,#efe9dd 23%,#f1ebdf 24%,#efe9dd 24%,#efe9dd 33%,#f0eade 35%,#f2ece0 36%,#efe9dd 38%,#f0eade 44%,#eee8dc 45%,#f0eade 46%,#f0eade 52%,#eee8dc 53%,#f1ebdf 54%,#efe9dd 54%,#f1ebdf 57%,#efe9dd 59%,#f1ebdf 61%,#efe9dd 68%,#f2ece0 69%,#efe9dd 69%,#eee8dc 74%,#f0eade 75%,#eee8dc 77%,#f0eade 79%,#eee8dc 80%,#f1ebdf 81%,#eee8dc 81%,#efe9dd 83%,#f2ece0 84%,#efe9dd 84%,#f1ebdf 85%,#efe9dd 85%,#efe9dd 87%,#f1ebdf 88%,#efe9dd 90%,#f1ebdf 90%,#eee8dc 92%,#f0eade 93%,#efe9dd 96%,#f1ebdf 96%,#eee8dc 97%,#f1ebdf 98%,#efe9dd 99%,#f0eade 100%);
     position: absolute;
     padding-bottom: 100px;
-    white-space: nowrap;
-    overflow: hidden;
 }  
 /* Adds links and styling to the header bar */
 header .main-nav li {
@@ -88,7 +86,7 @@ div.gallery:hover {
     border: 1px solid #777;
     }   
 div.gallery img {
-    padding-top: 100px;
+    padding-top: 200px;
     display: block;
     margin-left: auto;
     margin-right: auto;
