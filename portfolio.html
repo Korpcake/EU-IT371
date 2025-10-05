@@ -18,32 +18,38 @@
 </ul>
  </header>
 <body>
-<!-- addition of images for a gallery and ID of classes for CSS modificaion-->
-    <div class="responsive">
     <div class="gallery">
-        <a target="_blank" href="Images/portrait_LK.jpg">
-            <img src="Images/portrait_LK.jpg" alt="Fryer Hill" width="600" height="400">
-        </a>
-        <div class="desc">Portrait of a child</div>
+        <img id="image" src="Images/banner.jpg" />"
     </div>
-    <div class="gallery">
-        <a target="_blank" href="Images/indy_LK.jpg">
-            <img src="Images/indy_LK.jpg" alt="LK in Indy" width="600" height="400">
-        </a>
-        <div class="desc">LK in Indianapolis</div>
-    </div>
-    <div class="gallery">
-        <a target="_blank" href="Images/hh_LK.jpg">
-            <img src="Images/hh_LK.jpg" alt="LK at HH" width="600" height="400">
-        </a>
-        <div class="desc">LK at Hocking Hills</div>
-    </div>
-    <div class="gallery">
-        <a target="_blank" href="Images/HH.jpg">
-            <img src="Images/HH.jpg" alt="Hocking Hills" width="600" height="400">
-        </a>
-        <div class="desc">Hocking Hills</div>
-    </div>
+<!-- Images for gallery and Javascript for displaying them, selectable by buttons -->
+    <button type="button" onclick="show1()" id="Image1">Image 1</button>
+    <button type="button" onclick="show2()" id="Image2">Image 2</button>
+    <button type="button" onclick="show3()" id="Image3">Image 3</button>
+    <button type="button" onclick="show4()" id="Image4">Image 4</button>
+    <script>
+        function show1() {
+            let image = document.getElementById("image");
+            image.src = "Images/portrait_LK.jpg";
+        }
+        function show2() {
+            let image = document.getElementById("image");
+            image.src = "Images/indy_LK.jpg";
+            document.getElementById("Image2").style.display = "block";
+        }
+        function show3() {
+            let image = document.getElementById("image");
+            image.src = "Images/hh_LK.jpg";
+            document.getElementById("Image2").style.display = "block";
+        }
+        function show4() {
+            let image = document.getElementById("image");
+            image.src = "Images/HH.jpg";
+            document.getElementById("Image2").style.display = "block";
+        }
+    </script>
+        <h1>Portfolio</h1>
+        <p>Welcome to my portfolio page! Here are some samples of my work.</p>
+        <p>Click the buttons to browse through the images.</p>
 </div>
 </body>
 </html>
